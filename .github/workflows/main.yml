@@ -26,15 +26,12 @@ jobs:
 
       - name: Lint
         run: yarn lint
-        with:
-          working-directory: frontend-components/mylib
+        working-directory: frontend-components/mylib
 
       - name: Test
         run: yarn test --ci --coverage --maxWorkers=2
-        with:
-          working-directory: frontend-components/mylib
+        working-directory: frontend-components/mylib
 
       - name: Build
         run: yarn build
-        with:
-          working-directory: frontend-components/mylib
+        working-directory: frontend-components/mylib
